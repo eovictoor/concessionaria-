@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div class="esquerda">
+                <form>
+                    <p>Passaporte do Cidadão</p>
+                    <input type="number" id="content-passaporte">
+                    <p>Valor</p>
+                    <input type="number" id="content-value" onkeydown="formatarMoeda(this)" onkeypress="checkColor()">
+                </form>
+            </div>
+            <div class="direita">
+                <h1 id="detran-name">Detran</h1>
+                <p id="vehicle-name">CB 1000</p>
+                <p id="vehicle-value">Aguardando valor...</p>
+                <div class="interaction">
+                    <button onclick="interaction('Vender')" id="b1">Vender</button>
+                    <button onclick="interaction('Desistir')" id="b2">Desistir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert"><p id="message-box"></p></div>
+</body>
+<script src="script.js"></script>
+</html>

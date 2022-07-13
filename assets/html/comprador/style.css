@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root{
+    --fontTitulo: 'Russo One', sans-serif;
+    --fontParagrafo: 'Noto Sans', sans-serif;
+    --fontBase: 'Signika', sans-serif;
+    --corParagrafo: white; /* Psss*/
+    --corFundo: #373737d8;
+    --corInteracoes: rgb(37, 37, 37);
+    --corAzul: rgb(70,130,180);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.container{
+    width: 350px;
+    height: 200px;
+    margin-top: 18%;
+    margin-left: 5%;
+    animation: openPanel 2s ease-in-out;
+}.box{
+    display: flex;
+    background-color: var(--corFundo);
+    color: var(--corParagrafo);
+    font-family: var(--fontParagrafo);
+    border-radius: 12px 12px 12px 12px;
+}.esquerda{
+    width: 175px;
+    height: 200px;
+    font-size: 23px;
+}.direita{
+    width: 175px;
+    height: 200px;
+    overflow-y: hidden;
+}.direita button{
+    margin-top: 50px;
+    background-color: var(--corInteracoes);
+    color: var(--corParagrafo);
+    font-family: var(--fontBase);
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+    border: 0;
+    padding: 4px;
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 70%;
+    margin-right: 0px;
+    transition-duration: 650ms;
+}.direita button:hover{
+    background-color: var(--corAzul);
+    color: var(--corInteracoes);
+}
+#detran-name{
+    font-family: var(--fontTitulo);
+    text-align: right;
+    margin-left: 20%;
+    border-radius: 12px 4px 0px 12px;
+    text-align: center;
+    color: var(--corAzul);
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+    background-color: var(--corFundo);
+    margin-top: 5px;
+}
+#saler-name{
+    margin-top: 5px;
+    font-family: var(--fontTitulo);
+    text-shadow: 2px 2px black;
+    background-color: var(--corFundo);
+    border-radius: 4px 12px 12px 0px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--fontParagrafo);
+    animation: name-rgb 2s infinite ease-in-out;
+}
+#name-vehicle{
+    margin-top: 20%;
+    text-align: center;
+    font-family: var(--fontBase);
+    font-weight: bolder;
+    font-size: 25px;
+}#value-vehicle{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: var(--fontBase);
+    font-size: 25px;
+}
+
+.direita img{
+    width: 80px;
+    padding: 0;
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 3%;
+
+}
+.alert{
+    display: none;
+    position: fixed;
+    border: 1px solid red;
+    color: white;
+    width: 250px;
+    height: 5%;
+    font-size: 22px;
+    margin-top: 40%;
+    margin-right: 80%;
+    background-color: red;
+    border-radius: 12px 12px 12px 12px;
+    padding: 5px;
+    text-align: center;
+}.alert p{
+    font-family: 'Signika', sans-serif;
+    margin-top: 2%;
+}
+@keyframes name-rgb {
+    0%{
+        color: var(--corAzul);
+    }50%{
+        color: var(--corParagrafo);
+    }100%{
+        color: var(--corAzul);
+    }
+}
+@keyframes openPanel {
+    0%{
+        margin-top: 90%;
+    }100%{
+        margin-top: 18%;
+    }
+}
+
+@keyframes error{
+    0%{
+        margin-right: 200%;
+    }100%{
+        margin-right: 80%;
+    }
+}
+
+@keyframes success{
+    0%{
+        margin-right: 80%;
+    }100%{
+        margin-right: 200%;
+    }
+}

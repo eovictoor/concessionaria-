@@ -1,0 +1,36 @@
+<meta>
+    <!-- SCRIPT's -->
+    <script src = "config.lua" type = "shared" cache = "false"/>
+    <script src = "assets/script/vendedorOne.lua" type = "client"/>
+    <script src = "assets/script/compradorOne.lua" type = "client"/>
+    <script src = "assets/script/server.lua" type = "server"/>
+    <script src = "assets/script/client.lua" type = "client" cache = "false"/>
+    <!-- FONT's -->
+    <file src = "assets/font/font.ttf"/>
+    <!-- GFX's -->
+    <file src = "assets/gfx/1.png"/>
+    <file src = "assets/gfx/2.png"/>
+    <!-- GFX's MARK's -->
+    <file src = "assets/gfx/types/ferrari.png"/>
+	<file src = "assets/gfx/types/Honda.png"/>
+	<file src = "assets/gfx/types/bmw.png"/>
+	<file src = "assets/gfx/types/Triumph.png"/>
+	<file src = "assets/gfx/types/Chevrolet.png"/>
+	<file src = "assets/gfx/types/volkswagen.png"/>
+	<file src = "assets/gfx/types/Fiat.png"/>
+	<file src = "assets/gfx/types/Ford.png"/>
+	<file src = "assets/gfx/types/Hyundai.png"/>
+	<file src = "assets/gfx/types/Renaul.png"/>
+
+
+    <file src = "assets/html/vendedor/index.html"/>
+    <file src = "assets/html/vendedor/style.css"/>
+    <file src = "assets/html/vendedor/script.js"/>
+
+    <file src = "assets/html/comprador/index.html"/>
+    <file src = "assets/html/comprador/style.css"/>
+    <file src = "assets/html/comprador/script.js"/>
+    <file src = "assets/html/comprador/Imagens/alert.png"/>
+
+	
+</meta>
